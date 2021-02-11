@@ -6,9 +6,8 @@ on:
   schedule:
     - cron: '0 0 * * *'
   push:
-    branches: [ master, playground ]
-  pull_request:
-    branches: [ master ]
+    branches-ignore:
+    - '**'
 
 env:
   AZURE_WEBAPP_NAME: playgroundpetclinic
