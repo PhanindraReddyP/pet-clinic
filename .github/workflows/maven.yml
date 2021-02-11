@@ -6,9 +6,8 @@ on:
   schedule:
     - cron: '0 0 * * *'
   push:
-    branches-ignore:
-    - '**'
-
+    branches:
+    - main
 env:
   AZURE_WEBAPP_NAME: playgroundpetclinic
   AZURE_WEBAPP_PACKAGE_PATH: ${{ github.workspace }}
