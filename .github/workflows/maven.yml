@@ -33,7 +33,7 @@ jobs:
         java-version: 1.8
     
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B install --file pom.xml
 
    # - name: App Service Deploy
    #   uses: Azure/webapps-deploy@v2
